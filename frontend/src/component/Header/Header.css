@@ -1,0 +1,101 @@
+.navbar{
+  background-color: rgb(24, 24, 24);
+  position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+}
+.navbar *{
+  display: inline;
+}
+.container-wrapper{
+  display: flex;
+}
+.collapsible-wrapper{
+  float: left;
+}
+.nav-item{
+ margin: 60px ;
+ 
+}
+.nav-link{
+  color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 25px;
+    position: absolute;
+    margin-top: 10px;
+}
+.nav-link:hover{
+  color: rgb(195, 102, 102);
+}
+.right-elements{
+  float: right;
+}
+.search-container{
+  position: absolute;
+margin: 300px;
+margin-top: 10px;
+}
+.inp-search:hover{
+  box-shadow: 0px 2px 5px 5px rgb(84, 84, 84);
+}
+.inp-search{
+  height: 2rem;
+  width: 20rem;
+  border: none;
+  border-radius: 15px;
+}
+.inp-search::placeholder{
+  font-size: 20px;
+  position: absolute;
+  margin-top: -2px;
+  margin-left: 40px;
+}
+.btn-search{
+  margin-left: -315px;
+  border: none;
+  background-color: white;
+  position: absolute;
+  margin-top: 8px;
+  width: 20px;
+  height: 10px;
+}
+.btn-search:hover{
+  color: rgb(70, 70, 70);
+  cursor: pointer;
+ 
+}
+.notifications{
+  color: rgb(152, 152, 152);
+  text-decoration: none;
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 750px;
+}
+.notifications:hover{
+  color: rgb(255, 255, 255);
+}
+.nav-right{
+  margin: 60px ;
+  
+ }
+ .register-nav{
+   color: rgb(59, 59, 59);
+   font-weight: 600;
+     text-decoration: none;
+     font-size: 20px;
+     position: absolute;
+     margin-top: 10px;
+     background-color: rgb(255, 255, 255);
+     border: none;
+     border-radius: 5px;
+     padding: 5px ;
+     margin-left: 750px;
+ }
+ .register-nav:hover{
+  background-color: rgb(99, 166, 99);
+  box-shadow: 0px 2px 2px 2px;
+  color: white;
+ }
