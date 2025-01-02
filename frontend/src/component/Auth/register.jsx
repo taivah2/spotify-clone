@@ -22,13 +22,11 @@ const register = () => {
             password,
           })
           .then((response) => {
-            // Kiểm tra phản hồi từ backend
-            console.log('Backend response:', response); 
       
             // Hiển thị thông báo đăng ký thành công
             if (response.data.status === 'success') {
-              alert(response.data.message);  // Hiển thị thông báo từ backend
-              navigate('/login'); // Chuyển hướng sang trang đăng nhập
+              alert(response.data.message);  
+              navigate('/login'); 
             }
           })
           .catch((error) => {

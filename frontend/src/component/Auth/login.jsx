@@ -19,17 +19,17 @@ const login = () => {
             // Kiểm tra phản hồi từ backend
             console.log('Backend response:', response); 
       
-            const { token, isAdmin } = response.data.data;
+            const { token, isAdmin, userName } = response.data.data;
             localStorage.setItem('token', token);
+            localStorage.setItem('userName', userName);
             localStorage.setItem('isAdmin', isAdmin);
-    
     
             if (isAdmin) {
               alert('Login successfull!')
               navigate('/dashboard');
             } else {
               alert('Login successfull!')
-              navigate('/home');
+              navigate('/');
             }
           })
           .catch((error) => {

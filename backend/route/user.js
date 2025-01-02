@@ -1,18 +1,20 @@
 import express from "express";
 import { authenticate, authorizationAdmin } from "../middleware/authMiddleware.js";
-import {getAllUser, putUser,deleteUser} from '../controller/userController.js';
+import {getAllUser, putUser,deleteUser, postUser} from '../controller/userController.js';
 const router = express.Router();
 
 // Route getUser
-router.get('/', authenticate, authorizationAdmin, getAllUser);
+router.get('/getUser', authenticate, authorizationAdmin, getAllUser);
 
 
 // Route putUser
-router.put('/:id',authenticate,authorizationAdmin,putUser);
+router.put('/edit/:id',authenticate,authorizationAdmin,putUser);
 
 
 //Route deleteUSer
-router.delete("/:id", authenticate,authorizationAdmin,deleteUser);
+router.delete("/delete/:id", authenticate,authorizationAdmin,deleteUser);
 
+ //Route postUser
 
+ router.post('/createUser',authenticate,authorizationAdmin,postUser)
 export default router;

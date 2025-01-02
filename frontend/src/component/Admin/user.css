@@ -1,4 +1,87 @@
-.navbar-user{
-  position: sticky;
+	.table-wrapper {
+		position: relative;
+		left: 200px;
+		width: 87%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 
-}
+	.table-title {
+		width: 90%;
+		margin-bottom: 100px;
+		border-radius: 5px ;
+		padding: 20px;
+	}
+	.table-nav{
+		background-color: #6d90db;
+		color: white;
+		padding: 10px;
+		border-radius: 5px 5px 0 0px;
+	}
+	.name-user {
+		font-size: 34px;
+		font-family:'Courier New', Courier, monospace;
+		font-weight: 400;
+		position: relative;
+		top: 20px;
+		margin-left:25px ;
+	}
+
+	.table-nav .btn{
+		color: #fff;
+		left: 64rem;
+		bottom: 10px;
+		position: relative;
+	}
+	.table{
+		border: 1px solid rgb(190, 190, 190);
+	}
+	table.table tr th,
+	table.table tr td {
+		border-color: #c6bdbd;
+		padding: 15px 15px;
+		vertical-align: middle;
+	}
+
+	table.table tr th:first-child {
+		width: 40px;
+	}
+	table.table tr th:last-child {
+		width: 150px;
+	}
+	table.table-striped tbody tr:nth-of-type(old) {
+		background-color: #fcfcfc;
+	}
+	table.table-striped.table-hover tbody tr:hover {
+		background: #f5f5f5;
+	}
+	table.table th .material-icons {
+		font-size: 20px;
+		margin: 0 5%;
+		cursor: pointer;
+	}
+	table.table td:last-child .material-icons {
+		opacity: 0.9;
+		font-size: 22px;
+		margin: 0 10px;
+	}
+
+	table.table td .edit {
+		color: #b89429;
+		border: none;
+		margin-left: -20px;
+	}
+
+	table.table td .delete {
+		color: #F44336;
+		margin-left: -35px;
+	}
+
+	table.table td i {
+		font-size: 19px;
+	}
+	.modal-title{
+		color: #04714f;
+		font-size: 25px;
+	}

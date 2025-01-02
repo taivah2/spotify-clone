@@ -11,5 +11,10 @@ router.post('/register', register);
 
 // Route đăng nhập
 router.post('/login', login);
+ // Route dang xuat
+router.post('/logout', (req, res) => {
+  res.status(200).json({ message: 'Sign out successful' });
+});
+
 export default router;
 

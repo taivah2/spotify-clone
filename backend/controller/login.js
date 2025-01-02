@@ -25,8 +25,9 @@ export const login = async (req, res, next) => {
     res.status(201).json({
       message: 'Login successful',
       status: 'success',
-      data: { token
-      ,  isAdmin: user.isAdmin,}
+      data: { token,
+        userName: user.userName,
+        isAdmin: user.isAdmin,}
     });
   } catch (error) {
     next(error);

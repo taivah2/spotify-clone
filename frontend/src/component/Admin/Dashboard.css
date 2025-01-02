@@ -1,54 +1,51 @@
-.dashboard {
-    box-shadow: 5px 5px 10px 5px #aaa;
-    position: fixed;
-    width: 200px;
-    background-color: #0a9e46;
-    color: #fff;
-    opacity: 0.85;
-    z-index: 100;
-    top : 0;
-    height: 100vh;
-    padding: .5rem 1rem 0 0;
-  }
-
-  .navbar-dashboard {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: hidden;
-  
-  }
- .name-logo{
-  font-size: 30px;
-  font-family: 'Courier New', Courier, monospace;
-  text-align: center;
- } 
-.li-dashboard, .dashboard-menu, .dashboard-link{
-text-decoration: none;
+/* wrapper */
+.wrapper-dashboard{
+  display: flex;
+  position: relative;
+  top: 80px;
+  left: 250px;
+}
+.total-over{
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column wrap;
+}
+.totalSong{
+  padding: 60px ;
+  margin-left: -150px;
+}
+.img-wrapper{
+  width: 60px;
+}
+.h1-wrapper{
+  font-size: 23px;
+  color: rgb(230, 121, 11);
+  margin-left: 60px;
+  margin-top: -50px;
+}
+.h3-wrapper{
 font-size: 15px;
-color: #fff;
-margin: 30px 0px 30px 5px;
-list-style-type: none;
+margin-left: 60px;
 }
 
-.li-dashboard:hover{
-  background-color: black;
-  padding: 5px ;
-  box-shadow: 2px 5px 5px 2px rgb(227, 227, 53);
+.totalArtist{
+  padding: 60px ;
+  margin-left: 180px;
+  margin-top: -12rem;
 }
-.span-dash{
-  font-size:15px;
-  font-weight: 600;
-  font-family:'Times New Roman', Times, serif;
-  position: absolute;
-  margin-top: 10px;
-  margin-left: 25px;
+.totalTrack{
+  padding: 60px;
+  margin-left: 560px;
+  margin-top: -12rem;
 }
-.li-dashboard.active{
-  background-color: white;
-  color: black;
+.totalAlbum{
+  padding: 60px;
+  margin-left: 900px;
+  margin-top: -12rem;
 }
-.li-dashboard:focus{
-  outline: none;
-  background-color: #f5f5f5;
+.chart-container{
+margin-top: 11rem;
+margin-left: -78rem;
+
 }
+/* Premium */
