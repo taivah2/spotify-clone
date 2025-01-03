@@ -6,6 +6,7 @@ import Dashboard from './component/Admin/dashboard';
 import Home from './component/Page/home';
 import User from "./component/Admin/user"
 import './App.css'
+import Track from './component/Admin/Track';
 
 function App() {
 
@@ -30,7 +31,7 @@ function App() {
       <div className="Dashboard">
         <Routes>
           <Route path="/admin/user" element={<User />}></Route>
-         
+          <Route path="/admin/tracks" element={<Track />}></Route>
         </Routes>
       </div>
 
