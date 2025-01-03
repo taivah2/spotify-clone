@@ -5,8 +5,6 @@ import Logout from "../Auth/logout";
 import "./Header.css";
 
 function Header() {
-  const [searchTerm, setSearchTerm] = useState("");
-  const [searchResults, setSearchResults] = useState([]);
   const [currentUser, setCurrentUser] = useState(null);
   const navigate = useNavigate();
 
@@ -16,17 +14,7 @@ function Header() {
     setCurrentUser(storedUserName);
   }, []);
 
-  const handleSearch = async (event) => {
-    setSearchTerm(event.target.value);
-    if (event.target.value.trim() === "") {
-      setSearchResults([]);
-      return;
-    }
-
-    const results = await searchSpotify(event.target.value);
-    setSearchResults(results);
-  };
-
+ 
   const handleUserLogout = () => {
     setCurrentUser(null);
   };
@@ -68,27 +56,12 @@ function Header() {
                 placeholder="Search..."
                 name="search"
                 className="inp-search"
-                value={searchTerm}
-                onChange={handleSearch}
               />
               <button type="submit" className="button-search">
                 <FiSearch />
               </button>
             </form>
-            {searchResults.length > 0 && (
-              <div className="search-results">
-                {searchResults.map((track) => (
-                  <div key={track.id} className="search-result-item">
-                    <img src={track.album.images[0]?.url} alt={track.name} />
-                    <div>
-                      <p>{track.name}</p>
-                      <p className="artist">{track.artists[0]?.name}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
+</div>
 
           {/* Notifications */}
           <Link className="notifications" to="#">
